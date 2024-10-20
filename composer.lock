@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e4e7eed170f7766319a45a2f526b879",
+    "content-hash": "4fba71e7741752a60cdd611e2ecd7673",
     "packages": [
         {
             "name": "brick/math",
@@ -442,6 +442,198 @@
                 }
             ],
             "time": "2024-10-09T13:47:03+00:00"
+        },
+        {
+            "name": "ecotone/ecotone",
+            "version": "1.232.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ecotoneframework/ecotone.git",
+                "reference": "6f65bd511ce8df73efde1df0797c5abb404fbc76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ecotoneframework/ecotone/zipball/6f65bd511ce8df73efde1df0797c5abb404fbc76",
+                "reference": "6f65bd511ce8df73efde1df0797c5abb404fbc76",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-code": "^4",
+                "php": "^8.0",
+                "psr/container": "^1.1.1|^2.0.1",
+                "psr/log": "^2.0|^3.0",
+                "ramsey/uuid": "^4.0"
+            },
+            "require-dev": {
+                "behat/behat": "^3.10",
+                "phpstan/phpstan": "^1.8",
+                "phpunit/phpunit": "^9.6",
+                "symfony/expression-language": "^6.0|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.232.1-dev"
+                },
+                "ecotone": {
+                    "repository": "ecotone"
+                },
+                "merge-plugin": {
+                    "include": [
+                        "../local_packages.json"
+                    ]
+                },
+                "license-info": {
+                    "Apache-2.0": {
+                        "name": "Apache License 2.0",
+                        "url": "https://github.com/ecotoneframework/ecotone-dev/blob/main/LICENSE",
+                        "description": "Allows to use non Enterprise features of Ecotone. For more information please write to support@simplycodedsoftware.com"
+                    },
+                    "proprietary": {
+                        "name": "Enterprise License",
+                        "description": "Allows to use Enterprise features of Ecotone. For more information please write to support@simplycodedsoftware.com"
+                    }
+                },
+                "release-time": "2024-10-17 19:09:30"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ecotone\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0",
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Dariusz Gafka",
+                    "email": "support@simplycodedsoftware.com"
+                }
+            ],
+            "description": "Supporting you in building DDD, CQRS, Event Sourcing applications with ease.",
+            "homepage": "https://docs.ecotone.tech",
+            "keywords": [
+                "EventSourcing",
+                "cqrs",
+                "ddd",
+                "ecotone",
+                "event",
+                "event-driven",
+                "message-driven",
+                "service-bus"
+            ],
+            "support": {
+                "source": "https://github.com/ecotoneframework/ecotone/tree/1.232.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/dgafka",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-10-17T19:16:36+00:00"
+        },
+        {
+            "name": "ecotone/laravel",
+            "version": "1.233.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ecotoneframework/laravel.git",
+                "reference": "e40390b14506580242d7601a9ba6b24a6f5c25dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ecotoneframework/laravel/zipball/e40390b14506580242d7601a9ba6b24a6f5c25dd",
+                "reference": "e40390b14506580242d7601a9ba6b24a6f5c25dd",
+                "shasum": ""
+            },
+            "require": {
+                "ecotone/ecotone": "~1.232.1",
+                "laravel/framework": "^9.5.2|^10.0|^11.0"
+            },
+            "require-dev": {
+                "behat/behat": "^3.10",
+                "ecotone/dbal": "~1.232.1",
+                "guzzlehttp/psr7": "^2.0",
+                "moneyphp/money": "^4.1.0",
+                "nesbot/carbon": "^2.71",
+                "orchestra/testbench": "^7.6|^8.0",
+                "phpstan/phpstan": "^1.8",
+                "phpunit/phpunit": "^9.6",
+                "symfony/expression-language": "^6.0|^7.0",
+                "timacdonald/log-fake": "^2.0",
+                "wikimedia/composer-merge-plugin": "^2.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ecotone\\Laravel\\EcotoneProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "1.232.1-dev"
+                },
+                "ecotone": {
+                    "repository": "laravel"
+                },
+                "merge-plugin": {
+                    "include": [
+                        "../local_packages.json"
+                    ]
+                },
+                "license-info": {
+                    "Apache-2.0": {
+                        "name": "Apache License 2.0",
+                        "url": "https://github.com/ecotoneframework/ecotone-dev/blob/main/LICENSE",
+                        "description": "Allows to use non Enterprise features of Ecotone. For more information please write to support@simplycodedsoftware.com"
+                    },
+                    "proprietary": {
+                        "name": "Enterprise License",
+                        "description": "Allows to use Enterprise features of Ecotone. For more information please write to support@simplycodedsoftware.com"
+                    }
+                },
+                "release-time": "2024-10-17 19:09:30"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ecotone\\Laravel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0",
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Dariusz Gafka",
+                    "email": "support@simplycodedsoftware.com"
+                }
+            ],
+            "description": "Laravel integration for Ecotone",
+            "homepage": "https://docs.ecotone.tech/",
+            "keywords": [
+                "cqrs",
+                "ddd",
+                "ddd and cqrs on top of eip",
+                "distributed architecture",
+                "ecotone",
+                "eip",
+                "messaging"
+            ],
+            "support": {
+                "source": "https://github.com/ecotoneframework/laravel/tree/1.233.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/dgafka",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-10-17T19:16:47+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -1053,6 +1245,69 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "laminas/laminas-code",
+            "version": "4.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-code.git",
+                "reference": "562e02b7d85cb9142b5116cc76c4c7c162a11a1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/562e02b7d85cb9142b5116cc76c4c7c162a11a1c",
+                "reference": "562e02b7d85cb9142b5116cc76c4c7c162a11a1c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^2.0.1",
+                "ext-phar": "*",
+                "laminas/laminas-coding-standard": "^2.5.0",
+                "laminas/laminas-stdlib": "^3.17.0",
+                "phpunit/phpunit": "^10.3.3",
+                "psalm/plugin-phpunit": "^0.19.0",
+                "vimeo/psalm": "^5.15.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "Doctrine\\Common\\Annotations >=1.0 for annotation features",
+                "laminas/laminas-stdlib": "Laminas\\Stdlib component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Code\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Extensions to the PHP Reflection API, static code scanning, and code generation",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "code",
+                "laminas",
+                "laminasframework"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-code/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-code/issues",
+                "rss": "https://github.com/laminas/laminas-code/releases.atom",
+                "source": "https://github.com/laminas/laminas-code"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2024-06-17T08:50:25+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7896,12 +8151,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
